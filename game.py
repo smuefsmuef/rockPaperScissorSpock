@@ -41,7 +41,7 @@ def game():
 
         print(f'\nStats:\nWon: {Won}\nLost: {Lost}\nTie: {Tie}\n')
 
-        play_agin = input('Do you want to play again? (yes/no): ')
+        play_again = input('Do you want to play again? (yes/no): ')
 
     print('Thank you for playing. Until next time!')
 
