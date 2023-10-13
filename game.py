@@ -1,5 +1,22 @@
 import random
 
+def display_rules():
+    print("Welcome to Rock-Paper-Scissors-Rat-Spock!")
+    print("Rules:")
+    print("Rock crushes Scissors")
+    print("Scissors cuts Paper")
+    print("Paper covers Rock")
+    print("Rock crushes Rat")
+    print("Rat poisons Spock")
+    print("Spock smashes Scissors")
+    print("Scissors decapitates Rat")
+    print("Rat eats Paper")
+    print("Paper disproves Spock")
+    print("Spock vaporizes Rock")
+    print("You and the computer will each choose one of the options above.")
+    print("The winner is determined based on the rules above.")
+    print("Have fun!\n")
+
 
 def game():
     # Expand rules matrix.
@@ -18,6 +35,9 @@ def game():
     play_again = 'yes'
 
     while play_again.lower() == 'yes':
+        if input("Would you like to see the rules of the game? (yes/no): ").lower() == 'yes':
+            display_rules()
+
         CPU = random.choice(options)
         User = input('Choose an option (rock, paper, scissors, rat, spock): ')
 
